@@ -30,5 +30,40 @@ const Navbar = () => {
 export default Navbar;
 
 const Nav = styled.nav`
-
+display: flex;
+justify-content: space-between;
+align-items: center;
+.brand{
+  .container{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase; 
+  }
+  .toggle{
+    display: none;
+  }
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  li {
+    a {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      transition: 0ms.1s ease-in-out;
+      &:hover {
+        color: var(--primary-accent);
+        text-decoration: underline;
+      }
+    }
+    
+  }
+}
 `;
