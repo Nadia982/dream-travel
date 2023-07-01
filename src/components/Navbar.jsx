@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="brand">
           <div className="container">
             <img src={logo} alt="logo" />
-            Travelo
+            Dream Travel
           </div>
           <div className="toggle">
 
@@ -51,19 +51,42 @@ align-items: center;
 ul {
   display: flex;
   list-style-type: none;
-  gap: 2rem;
+  
+  font-weight: bolder;
   li {
     a {
       text-decoration: none;
       color: var(--primary-color);
       font-size: 1.2rem;
       transition: 0ms.1s ease-in-out;
+      padding: 1rem 1.5rem;
       &:hover {
         color: var(--primary-accent);
         text-decoration: underline;
+        text-underline-offset: 0.2rem;
+        text-decoration-thickness: 0.2rem;
       }
     }
     
   }
 }
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bolder;
+  border: none;
+  border-radius: 1rem;
+  color: whitesmoke;
+  background-color: var(--primary-light);
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  transition: 0ms.3s ease-in-out;
+  &:hover{
+    background-color: var(--primary-accent);
+  }
+}
+
 `;
