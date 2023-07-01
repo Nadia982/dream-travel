@@ -21,7 +21,7 @@ const Navbar = () => {
           <li><a href="#recommend">Places</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
         </ul>
-        <button>Connect</button>
+        <button>Contact</button>
       </Nav>
     </>
   );
@@ -33,6 +33,7 @@ const Nav = styled.nav`
 display: flex;
 justify-content: space-between;
 align-items: center;
+margin-bottom: 0.75rem;
 .brand{
   .container{
     cursor: pointer;
