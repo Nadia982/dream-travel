@@ -33,7 +33,6 @@ const Nav = styled.nav`
 display: flex;
 justify-content: space-between;
 align-items: center;
-margin-bottom: 0.75rem;
 .brand{
   .container{
     cursor: pointer;
@@ -61,6 +60,12 @@ ul {
       font-size: 1.2rem;
       transition: 0ms.1s ease-in-out;
       padding: 1rem 1.5rem;
+      &:focus  {
+        color: var(--primary-accent);
+        text-decoration: underline;
+        text-underline-offset: 0.2rem;
+        text-decoration-thickness: 0.2rem;
+      }
       &:hover {
         color: var(--primary-accent);
         text-decoration: underline;
