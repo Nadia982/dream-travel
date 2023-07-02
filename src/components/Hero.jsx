@@ -12,14 +12,17 @@ const Hero = () => {
           <h1>TRAVEL TO EXPLORE</h1>
           <p>
             Indulge in opulence and explore the world with our bespoke luxury
-            travel agency.</p><p>Unforgettable experiences, exclusive accommodation
-            and personalised itineraries await.
+            travel agency.
+          </p>
+          <p>
+            Unforgettable experiences, exclusive accommodation and personalised
+            itineraries await.
           </p>
         </div>
         <div className="search">
           <div className="container">
             <label htmlFor="">Destination</label>
-            <input type="text" placeholder="Search destinations" />
+            <input type="text" placeholder="Type destination here" />
           </div>
           <div className="container">
             <label htmlFor="">Check-in date</label>
@@ -39,11 +42,11 @@ const Hero = () => {
 export default Hero;
 
 const Section = styled.section`
+/* background-image: url(${homeImage}); */
   position: relative;
   margin-top: 1rem;
   width: 100%;
   height: 100%;
-  /* height: auto; */
   .background {
     height: 100%;
     img {
@@ -57,7 +60,7 @@ const Section = styled.section`
     text-align: center;
     position: absolute;
     top: 0;
-    color: whitesmoke;
+    color: white;
     z-index: 3;
     display: flex;
     flex-direction: column;
@@ -68,23 +71,61 @@ const Section = styled.section`
       font-size: 3rem;
       letter-spacing: 0.2rem;
     }
-    p{
-      padding: 0 20vw;
+    p {
+      padding: 0 15vw;
       margin-top: 0.5rem;
       font-size: 1.2rem;
+      font-weight: 500;
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     }
     .search {
-    display: flex;
-    background-color: #ffffce;
-    /* margin: 0 20vw; */
-    padding: 0.5rem;
-    .container{
       display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      padding: 0 1.5rem;
+      background-color: white;
+      opacity: 80%;
+      padding: 0.5rem;
+      border-radius: 5px;
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 1.5rem;
+        label {
+          font-size: 1.1rem;
+          color: var(--primary-dark);
+        }
+        input {
+          background-color: transparent;
+          border: 1px solid var(--primary-dark);
+          border-radius: 4px;
+          text-align: center;
+          margin-top: 0.2rem;
+          padding: 0.4rem 0;
+          color: black;
+        
+          &[type="date"] {
+            padding-left: 1rem;
+          }
+          &::placeholder {
+            color: darkslategrey;
+            text-align: center;            
+          }
+        }
+      }
+      button {
+        padding: 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+        color: white;
+        border: none;
+        background-color: var(--primary-bright);
+        font-size: 1.1rem;
+        max-width: 100px;
+        transition: 0.3s ease-in-out;
+        &:hover{
+          background-color: var(--primary-dark);
+        }
+      }
     }
   }
-}
 `;

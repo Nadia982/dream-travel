@@ -43,6 +43,8 @@ align-items: center;
     font-size: 1.2rem;
     font-weight: 900;
     text-transform: uppercase; 
+    max-width: 120px;
+    line-height: 1.2rem;
   }
   .toggle{
     display: none;

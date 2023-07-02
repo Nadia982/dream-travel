@@ -6,7 +6,9 @@
 }
 
 :root {
+  --primary-dark: #03045e;
   --primary-color: #0077b6;
+  --primary-bright: #4361ee;
   --primary-accent: #023e8a;
   --primary-light: #48cae4;
 }
@@ -28,5 +30,6 @@ code {
 }
 
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
 }
+
