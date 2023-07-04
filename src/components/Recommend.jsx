@@ -57,10 +57,10 @@ const Recommend = () => {
   ];
 
   const packages = [
-    "The Weekend Break",
-    "The Package Holiday",
-    "The Group Tour",
-    "Long Term Slow Travel",
+    "All Destinations",
+    "City Breaks",
+    "Tropical Escapes",
+    "Rural Retreats"
   ];
 
   const [active, setActive] = useState(1);
@@ -83,10 +83,11 @@ const Recommend = () => {
             );
           })}
         </ul>
+        </div>
         <div className="destinations">
-          {data.map((destination)=> {
+          {data.map((destination) => {
             return (
-              <div className="derst">
+              <div className="destination">
                 <img src={destination.image} alt={destination.title} />
                 <h3>{destination.title}</h3>
                 <p>{destination.subTitle}</p>
@@ -99,15 +100,35 @@ const Recommend = () => {
                   <h4>{destination.duration}</h4>
                 </div>
               </div>
-            )
-          }
-          )}
+            );
+          })}
         </div>
-      </div>
     </Section>
   );
 };
 
 export default Recommend;
 
-const Section = styled.section``;
+const Section = styled.section`
+  padding: 2rem 0;
+  .title {
+    text-align: center;
+  }
+  .packages {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    ul {
+      display: flex;
+      list-style-type: none;
+      width: max-content;
+      li {
+        padding: 1rem 2rem;
+        border-bottom: 0.1rem solid #000;
+      }
+      .active {
+        border-bottom: 0.5rem solid var(--secondary-color);
+      }
+    }
+  }
+`;
