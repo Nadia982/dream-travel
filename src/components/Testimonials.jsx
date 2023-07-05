@@ -15,9 +15,8 @@ const Testimonials = () => {
             experiences. Dream Travel exceeded all our expectations!
           </p>
         </div>
-
         <div className="testimonial">
-        <h4>Mr Y.</h4>
+          <h4>Mr Y.</h4>
           <p>
             From start to finish, our trip was a seamless blend of luxury and
             adventure. Thank you for crafting an amazing experience.
@@ -37,4 +36,31 @@ const Testimonials = () => {
 
 export default Testimonials;
 
-const Section = styled.section``;
+const Section = styled.section`
+  margin: 5rem 0;
+  .title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .testimonials {
+    display: flex;
+    justify-content: center;
+    margin: 0 2rem;
+    gap: 2rem;
+    .testimonial {
+      background-color: aliceblue;
+      width: 30%;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: rgba(100,100,111,0.2) 0 7px 29px 0;
+      transition: 0.3s ease-in-out;
+      &:hover{
+        transform: translate(0.4rem, -1rem);
+        box-shadow: rgba(0,0,0,0.35) 0 5px 15px;
+      }
+      h4 {
+        text-align: center;
+      }
+    }
+  }
+`;
