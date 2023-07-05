@@ -51,7 +51,7 @@ const Recommend = () => {
       image: Destination6,
       title: "London",
       subTitle:
-        "Immerse yourself in the timeless elegance and vibrant energy of London, a city where rich history meets modern luxury.",
+        "Immerse yourself in the timeless elegance and vibrant energy of London, a city where rich history and tradition meets modern luxury.",
       duration: "7 nights",
     },
   ];
@@ -150,6 +150,7 @@ const Section = styled.section`
       }
       img {
         width: 100%; 
+        border-radius: 0.5rem;
       }
       .info{
         display: flex;
