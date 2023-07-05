@@ -30,21 +30,21 @@ const Recommend = () => {
       image: Destination3,
       title: "Paris",
       subTitle:
-        "Experience the epitome of elegance and sophistication in the enchanting city of Paris, where world-class cuisine, iconic landmarks, and unparalleled artistry await.",
+        "Experience the epitome of elegance and sophistication in the enchanting city of Paris, where exquisite cuisine, iconic landmarks, and unparalleled artistry await.",
       duration: "3 nights",
     },
     {
       image: Destination4,
       title: "New Zealand",
       subTitle:
-        "Discover a pristine oasis of breathtaking landscapes, untouched wilderness, and world-class amenities in New Zealand.",
+        "Discover a pristine idyll of breathtaking landscapes, untouched wilderness, and exceptional amenities in New Zealand.",
       duration: "14 nights",
     },
     {
       image: Destination5,
       title: "Bora Bora",
       subTitle:
-        "Experience ultimate luxury at Bora Bora, where flawless turquoise waters, overwater bungalows, and world-class amenities create an unforgettable tropical escape.",
+        "Experience ultimate luxury at Bora Bora, where flawless turquoise waters, overwater bungalows, and first-class service create an unforgettable tropical escape.",
       duration: "14 nights",
     },
     {
@@ -128,6 +128,45 @@ const Section = styled.section`
       }
       .active {
         border-bottom: 0.5rem solid var(--secondary-color);
+      }
+    }
+  }
+  .destinations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+    padding: 0 3rem;
+    .destination {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      background-color: #8338ec14;
+      border-radius: 1rem;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        transform: translate(0.4rem, -1rem);
+        box-shadow: rgba(0,0,0,0.35) 0 5px 15px; 
+      }
+      img {
+        width: 100%; 
+      }
+      .info{
+        display: flex;
+        align-items: center;
+        .services {
+          display: flex;
+          gap: 0.3rem;
+          img {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 1rem;
+            background-color: #4d2ddb84;
+            padding: 0.2rem 0.4rem;
+          }
+        }
+        display: flex;
+        justify-content: space-between;
       }
     }
   }

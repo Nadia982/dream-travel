@@ -24,7 +24,7 @@ const Services = () => {
     {
       icon: service3,
       alt: "hotel icon",
-      title: "Unparalleled Accommodation",
+      title: "Beautiful Accommodation",
       subTitle:
         "Immerse yourself in the lap of luxury with our handpicked selection of exquisite accommodation, from lavish resorts to boutique hotels.",
     },
