@@ -14,7 +14,7 @@ const Footer = () => {
           <a href="#services">Services</a>
         </li>
         <li>
-          <a href="#recommend">Recommend</a>
+          <a href="#recommend">Places</a>
         </li>
         <li>
           <a href="#testimonials">Testimonials</a>
@@ -31,4 +31,33 @@ const Footer = () => {
 
 export default Footer;
 
-const FooterContainer = styled.footer``;
+const FooterContainer = styled.footer`
+display: flex;
+justify-content: space-evenly;
+background-color: var(--primary-lightest);
+padding: 2.5rem;
+border-radius: 0.5rem;
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  li {
+    a{
+      text-decoration: none;
+      color: black;
+      transition: 0.3s ease-in-out;
+      padding: 0.5rem 0;
+      &:hover {
+        color: var(--primary-bright2);
+        text-decoration: underline;
+      }
+    }
+    svg {
+      font-size: 1.6rem;
+      &:hover {
+        color: var(--primary-bright2)
+      }
+    }
+  }
+}
+`;

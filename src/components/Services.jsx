@@ -38,6 +38,8 @@ const Services = () => {
   ];
 
   return <Section id="services">
+    <h2>Services</h2>
+    <div className="services-container">
     {
     data.map(service=>{
       return (
@@ -51,13 +53,19 @@ const Services = () => {
       )
     })
     }
+    </div>
     </Section>;
 };
 
 export default Services;
 
 const Section = styled.section`
-padding: 5rem 0;
+h2{
+  margin-top: 2rem;
+  text-align: center;
+}
+.services-container{
+padding: 3rem 0;
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 gap: 1rem;
@@ -78,5 +86,5 @@ gap: 1rem;
       height: 2.4rem;
     }
   }
-}
+}}
 `

@@ -68,7 +68,7 @@ const Recommend = () => {
   return (
     <Section id="recommend">
       <div className="title">
-        <h2>Recommended destinations</h2>
+        <h2>Places</h2>
       </div>
       <div className="packages">
         <ul>

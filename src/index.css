@@ -9,9 +9,12 @@
   --primary-dark: #03045e;
   --primary-color: #0077b6;
   --primary-bright: #4361ee;
+  --primary-bright2: #302ce9;
   --primary-accent: #023e8a;
   --primary-light: #48cae4;
+  --primary-lightest: #d0d8ff;
   --secondary-color: #8338ec;
+  
 }
 
 html {
