@@ -30,6 +30,12 @@ const Navbar = () => {
 export default Navbar;
 
 const Nav = styled.nav`
+position: sticky;
+top:0;
+background-color: #fff;
+padding-bottom: 1rem;
+box-shadow: rgba(0,0,0,0.35) 0 0 5px;
+z-index: 10;
 display: flex;
 justify-content: space-between;
 align-items: center;

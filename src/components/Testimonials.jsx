@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Testimonials = () => {
   return (
-    <Section>
+    <Section id = "testimonials">
       <div className="title">
         <h2>Testimonials</h2>
       </div>
