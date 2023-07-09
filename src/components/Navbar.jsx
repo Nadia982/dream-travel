@@ -103,4 +103,20 @@ button {
   }
 }
 
+@media screen and (max-width: 1080px){
+  .brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .toggle {
+      display: block;
+    }
+  }
+  ul, button {
+    display: none;
+    
+  }
+
+}
 `;
