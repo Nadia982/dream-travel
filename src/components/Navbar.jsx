@@ -114,9 +114,9 @@ button {
     }
   }
   ul, button {
-    display: none;
-    
+    display: none; 
   }
+  
 
 }
 `;
