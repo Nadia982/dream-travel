@@ -14,8 +14,8 @@ const ScrollToTop = () => {
   })
   return (
     <ToTop scrollState={scrollState}  onClick = {toTop}>
-      <img src={logo} alt="Dream Travel logo. Click to go to top of page" />
-
+      <p>Scroll to top</p>
+      <img src={logo} alt="Dream Travel logo. Click to scroll to top" />
     </ToTop>
   )
 }
@@ -23,14 +23,23 @@ const ScrollToTop = () => {
 export default ScrollToTop
 
 const ToTop = styled.div`
-display: ${({scrollState}) => (scrollState ? "block" : "none")};
+display: ${({scrollState}) => (scrollState ? "flex" : "none")};
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 0.1rem;
 position: fixed; 
 bottom: 1rem;
-right: 2rem;
+right: 0.5rem;
 z-index: 10;
 cursor: pointer;
 img {
   height: 1.5rem;
+}
+p {
+  font-size: 0.8rem;
+  max-width: 45px;
+  text-align: center;
 }
 border-radius: 2rem;
 background-color: #1900ff39;
