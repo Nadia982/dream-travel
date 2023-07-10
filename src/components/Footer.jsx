@@ -81,4 +81,5 @@ ul {
   margin-top: 1rem;
   flex-direction: row;
 }
+}
 `;
