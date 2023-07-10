@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 import logo from "../assets/logo.png";
+import {GiHamburgerMenu} from 'react-icons/gi'
+import {VscChromeClose} from 'react-icons/vsc'
+
 
 const Navbar = () => {
+  const [navbarState, setNavbarState] = useState(false);
   return (
     <>
       <Nav>
@@ -12,9 +16,12 @@ const Navbar = () => {
             Dream Travel
           </div>
           <div className="toggle">
-
+            {
+            navbarState ? <VscChromeClose/> : <GiHamburgerMenu/>
+            }
           </div>
         </div>
+
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#services">Services</a></li>
