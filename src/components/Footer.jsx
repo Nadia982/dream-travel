@@ -60,4 +60,25 @@ ul {
     }
   }
 }
+
+@media screen and (max-width: 700px){
+flex-direction: column;
+ul {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.links {
+  a { 
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: 2rem;
+  }
+  
+}
+.social__links {
+  margin-top: 1rem;
+  flex-direction: row;
+}
 `;
