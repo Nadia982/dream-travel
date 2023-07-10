@@ -63,4 +63,21 @@ const Section = styled.section`
       }
     }
   }
+
+  @media screen and (max-width: 660px){
+    .testimonials{
+      flex-direction: column;
+      margin: 0;
+      .testimonial {
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+        .info {
+          flex-direction: column;
+          justify-content: center;
+
+        }
+      }
+    }
+  }
 `;
