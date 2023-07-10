@@ -103,7 +103,7 @@ button {
   }
 }
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 980px){
   .brand {
     display: flex;
     justify-content: space-between;
@@ -116,7 +116,7 @@ button {
   ul, button {
     display: none; 
   }
-  
+
 
 }
 `;

@@ -120,7 +120,7 @@ const Section = styled.section`
         border: none;
         background-color: var(--primary-bright);
         font-size: 1.1rem;
-        max-width: 100px;
+        width: 100px;
         transition: 0.3s ease-in-out;
         &:hover{
           background-color: var(--primary-dark);
@@ -128,4 +128,38 @@ const Section = styled.section`
       }
     }
   }
+  
+@media screen and (max-width: 980px){
+  height: 35rem;
+  .background {
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .content {
+    .title {
+      margin-bottom: 1rem;
+      h1 {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 1rem;
+        padding: 0 4vw;
+      }
+    }
+    .search {
+      flex-direction: column;
+      gap: 1rem;
+      .container {
+        padding: 0 .8rem;
+      }
+      button {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
 `;
