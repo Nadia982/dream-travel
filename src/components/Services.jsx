@@ -60,6 +60,7 @@ const Services = () => {
 export default Services;
 
 const Section = styled.section`
+max-width: 1200px;
 h2{
   margin-top: 2rem;
   text-align: center;
@@ -86,5 +87,11 @@ gap: 1rem;
       height: 2.4rem;
     }
   }
-}}
+}
+}
+@media screen and (max-width: 980px){
+  .services-container{
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+  }
+}
 `
