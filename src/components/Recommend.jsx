@@ -171,4 +171,25 @@ const Section = styled.section`
       }
     }
   }
+  @media screen and (max-width: 980px){
+    .packages {
+      ul {
+        text-align: center;
+        justify-content: center;
+        li {
+          height: 3rem;
+          width: 25%;
+          padding: 0 0.2rem;
+          font-size: 0.8rem;
+          padding-bottom: 1rem;
+        }
+        .active {
+          border-bottom-width: 0.3rem; 
+        }
+      }
+    }
+  .destinations{
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr))
+  }
+}
 `;
