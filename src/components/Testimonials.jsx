@@ -37,7 +37,7 @@ const Testimonials = () => {
 export default Testimonials;
 
 const Section = styled.section`
-  margin: 5rem 0;
+  margin: 3rem 0;
   .title {
     text-align: center;
     margin-bottom: 2rem;

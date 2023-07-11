@@ -17,7 +17,7 @@ const Navbar = () => {
           </div>
           <div className="toggle">
             {
-            navbarState ? <VscChromeClose/> : <GiHamburgerMenu/>
+            navbarState ? <VscChromeClose onClick={()=> setNavbarState(false)}/> : <GiHamburgerMenu onClick={()=> setNavbarState(true)}/>
             }
           </div>
         </div>
@@ -30,6 +30,7 @@ const Navbar = () => {
         </ul>
         <button>Contact</button>
       </Nav>
+      
     </>
   );
 };

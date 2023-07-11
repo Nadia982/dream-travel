@@ -44,7 +44,6 @@ export default Hero;
 const Section = styled.section`
 /* background-image: url(${homeImage}); */
   position: relative;
-  margin-top: 1rem;
   width: 100%;
   height: 100%;
   .background {
@@ -66,7 +65,6 @@ const Section = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
     h1 {
       font-size: 3rem;
       letter-spacing: 0.2rem;
@@ -130,7 +128,7 @@ const Section = styled.section`
   }
   
 @media screen and (max-width: 980px){
-  height: 35rem;
+  height: 100%;
   .background {
     img {
       height: 100%;
