@@ -123,12 +123,19 @@ const Section = styled.section`
       list-style-type: none;
       width: max-content;
       li {
-        padding: 1rem 2rem;
+        padding: 1rem 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-bottom: 0.1rem solid #000;
+        &:hover {
+        background-color: var(--primary-lightest);
       }
-      .active {
+      }
+      .active { 
         border-bottom: 0.5rem solid var(--secondary-color);
       }
+      
     }
   }
   .destinations {
@@ -179,9 +186,9 @@ const Section = styled.section`
         li {
           height: 3rem;
           width: 25%;
-          padding: 0 0.2rem;
+          padding: 0.4rem 0.4rem 1rem ;
           font-size: 0.8rem;
-          padding-bottom: 1rem;
+         
         }
         .active {
           border-bottom-width: 0.3rem; 

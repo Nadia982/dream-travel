@@ -17,12 +17,12 @@ const App = () => {
       reset: true,
     });
     sr.reveal(
-      `nav, 
+      ` 
       #hero, 
       #service,
       #recommend,
       #testimonials,
-      footer`,
+      `,
       {
         opacity: 0,
         interval: 300,
