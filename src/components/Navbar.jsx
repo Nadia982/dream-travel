@@ -4,7 +4,6 @@ import logo from "../assets/logo.png";
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {VscChromeClose} from 'react-icons/vsc'
 
-
 const Navbar = () => {
   const [navbarState, setNavbarState] = useState(false);
   return (
@@ -30,18 +29,23 @@ const Navbar = () => {
         </ul>
         <button>Contact</button>
       </Nav>
-      
+      <ResponsiveNav state={navbarState}>
+      <ul>
+          <li><a href="#hero" onClick={()=>setNavbarState(false)}>Home</a></li>
+          <li><a href="#services" onClick={()=>setNavbarState(false)}>Services</a></li>
+          <li><a href="#recommend" onClick={()=>setNavbarState(false)}>Places</a></li>
+          <li><a href="#testimonials" onClick={()=>setNavbarState(false)}>Testimonials</a></li>
+        </ul>
+      </ResponsiveNav>
     </>
   );
 };
-
-export default Navbar;
 
 const Nav = styled.nav`
 position: sticky;
 top:0;
 background-color: #fff;
-padding-bottom: 1rem;
+padding-bottom: 0.3rem;
 box-shadow: rgba(0,0,0,0.35) 0 0 5px;
 z-index: 10;
 display: flex;
@@ -67,7 +71,6 @@ align-items: center;
 ul {
   display: flex;
   list-style-type: none;
-  
   font-weight: bolder;
   li {
     a {
@@ -119,12 +122,49 @@ button {
     width: 100%;
     .toggle {
       display: block;
+      font-size: 2rem;
+      margin-right: 1rem;
+      
+      svg {
+        display: block;
+        cursor: pointer;
+      }
     }
   }
-  ul, button {
+  ul {
     display: none; 
   }
-
-
+  button {
+    display: none;
+  }
 }
 `;
+
+const ResponsiveNav = styled.div`
+display: flex;
+position: fixed;
+transition: 0.3s ease-in-out;
+z-index: 150;
+background-color: #fff;
+width: 100%;
+height: auto;
+top: ${({state}) => (state ? "50px" : "-400px")};
+ul {
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+    a {
+      text-decoration: none;
+      padding: 2rem 1rem;
+      display: block;
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      transition: 0.1s ease-in-out;
+      &:hover {
+        color: var(--primary-accent);
+      }
+    }
+}
+`;
+
+export default Navbar;

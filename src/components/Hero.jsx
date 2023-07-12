@@ -42,7 +42,6 @@ const Hero = () => {
 export default Hero;
 
 const Section = styled.section`
-/* background-image: url(${homeImage}); */
   position: relative;
   width: 100%;
   height: 100%;
@@ -55,7 +54,6 @@ const Section = styled.section`
   }
   .content {
     height: 100%;
-    width: 100%;
     text-align: center;
     position: absolute;
     top: 0;
@@ -65,6 +63,7 @@ const Section = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 3rem;
     h1 {
       font-size: 3rem;
       letter-spacing: 0.2rem;
@@ -128,7 +127,7 @@ const Section = styled.section`
   }
   
 @media screen and (max-width: 980px){
-  height: 100%;
+  height: 100vh;
   .background {
     img {
       height: 100%;
@@ -136,13 +135,14 @@ const Section = styled.section`
     }
   }
   .content {
+
     .title {
       margin-bottom: 1rem;
       h1 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
       }
       p {
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 0 4vw;
       }
     }

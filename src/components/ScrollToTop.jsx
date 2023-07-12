@@ -41,7 +41,7 @@ p {
   max-width: 45px;
   text-align: center;
 }
-border-radius: 2rem;
+border-radius: 1rem;
 background-color: #1900ff39;
-padding: 0.6rem;
+padding: 0.1rem 0;
 `;

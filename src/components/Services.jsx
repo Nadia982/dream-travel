@@ -60,6 +60,7 @@ const Services = () => {
 export default Services;
 
 const Section = styled.section`
+margin: 0 auto;
 max-width: 1200px;
 h2{
   margin-top: 2rem;
