@@ -147,6 +147,7 @@ const Section = styled.section`
       padding: 1rem;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       gap: 0.5rem;
       background-color: #8338ec14;
       border-radius: 1rem;

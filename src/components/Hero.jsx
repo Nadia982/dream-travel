@@ -79,6 +79,7 @@ const Section = styled.section`
       display: flex;
       background-color: white;
       opacity: 80%;
+      margin-top: 2rem;
       padding: 0.5rem;
       border-radius: 5px;
       .container {
