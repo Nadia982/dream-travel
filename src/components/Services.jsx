@@ -1,36 +1,40 @@
 import React from "react";
 import styled from "styled-components";
-import service1 from "../assets/service1.png";
-import service2 from "../assets/service2.png";
-import service3 from "../assets/service3.png";
-import service4 from "../assets/service4.png";
+
+// import {GiIsland, GiPartyPopper} from 'react-icons/gi';
+// import { TbDiamond } from '@tabler/icons-react';
+// import TbDiamond from 'react-icons/tb';
+// import TbHotelService from 'react-icons/tb';
+// import TbSunset from 'react-icons/tb';
+// import IoIosAirplane from 'react-icons'
+import { IoIosAirplane } from "react-icons/io";
 
 const Services = () => {
   const data = [
     {
-      icon: service1,
+      icon: IoIosAirplane,
       alt: "topical island",
       title: "Exclusive Destinations",
       subTitle:
         "Discover the world's most luxurious and sought-after destinations, from pristine tropical islands to cosmopolitan city escapes.",
     },
     {
-      icon: service2,
-      alt: "VIP icon",
+      icon: IoIosAirplane,
+      alt: "diamond icon symbolising VIP treatment",
       title: "Personalized Service",
       subTitle:
         "Our dedicated team of travel experts will meticulously plan every aspect of your trip, offering personalized recommendations to ensure a seamless travel experience.",
     },
     {
-      icon: service3,
+      icon: IoIosAirplane,
       alt: "hotel icon",
       title: "Beautiful Accommodation",
       subTitle:
         "Immerse yourself in the lap of luxury with our handpicked selection of exquisite accommodation, from lavish resorts to boutique hotels.",
     },
     {
-      icon: service4,
-      alt: "castle icon",
+      icon: IoIosAirplane,
+      alt: "sunset icon",
       title: "Authentic Cultural Immersion",
       subTitle:
         "Delve into the local culture and traditions of your destination with curated itineraries that offer unique encounters and insider access to hidden gems."
@@ -44,8 +48,10 @@ const Services = () => {
     data.map(service=>{
       return (
         <div className="service">
-          <div className="icon">
-            <img src={service.icon} alt={service.alt} />
+          {/* <div className="icon"> */}
+          <div>
+          {service.icon}
+            {/* <img src={service.icon} alt={service.alt} /> */}
           </div>
           <h3>{service.title}</h3>
           <p>{service.subTitle}</p>
