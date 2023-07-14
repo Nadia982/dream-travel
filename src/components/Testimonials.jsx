@@ -26,7 +26,7 @@ const Testimonials = () => {
           <h4>Mrs G.</h4>
           <p>
             Dream Travel’s expert guidance and personalised touch made for an
-            incredible, memorable holiday.
+            incredible, memorable holiday. We plan to be back very soon!
           </p>
         </div>
       </div>
@@ -60,6 +60,7 @@ const Section = styled.section`
       }
       h4 {
         text-align: center;
+        margin-bottom: 1rem;
       }
     }
   }

@@ -187,7 +187,7 @@ const Section = styled.section`
         li {
           height: 3rem;
           width: 25%;
-          padding: 0.4rem 0.4rem 1rem ;
+          padding: 1rem 0.5rem;
           font-size: 0.8rem;
          
         }
