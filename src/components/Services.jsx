@@ -45,10 +45,11 @@ const Services = () => {
     data.map(service=>{
       return (
         <div className="service">
+          <h3>{service.title}</h3>
           <div className="service-icon" aria-hidden focusable="false">
           {service.icon }
           </div>
-          <h3>{service.title}</h3>
+          
           <p>{service.subTitle}</p>
         </div>
       )
@@ -65,11 +66,13 @@ margin: 0 auto;
 max-width: 1200px;
 width: 80%;
 text-align: center;
+
 h2{
   margin-top: 2rem;
 }
 .services-container{
-padding: 3rem 0;
+  color: var(--primary-color);
+padding: 1rem 0;
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 gap: 1rem;
