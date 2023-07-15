@@ -71,7 +71,7 @@ h2{
   margin-top: 2rem;
 }
 .services-container{
-padding: 1rem 0;
+padding: 2rem 0;
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 gap: 1rem;
