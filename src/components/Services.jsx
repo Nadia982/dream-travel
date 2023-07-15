@@ -1,39 +1,36 @@
 import React from "react";
 import styled from "styled-components";
 
-// import {GiIsland, GiPartyPopper} from 'react-icons/gi';
-// import { TbDiamond } from '@tabler/icons-react';
-// import TbDiamond from 'react-icons/tb';
-// import TbHotelService from 'react-icons/tb';
-// import TbSunset from 'react-icons/tb';
-// import IoIosAirplane from 'react-icons'
-import { IoIosAirplane } from "react-icons/io";
+import {GiIsland, GiIndianPalace} from 'react-icons/gi';
+import {FaHotel} from 'react-icons/fa';
+import {PiCrownSimpleBold} from 'react-icons/pi';
+
 
 const Services = () => {
   const data = [
     {
-      icon: IoIosAirplane,
+      icon: <GiIsland />,
       alt: "topical island",
       title: "Exclusive Destinations",
       subTitle:
         "Discover the world's most luxurious and sought-after destinations, from pristine tropical islands to cosmopolitan city escapes.",
     },
     {
-      icon: IoIosAirplane,
+      icon: < PiCrownSimpleBold />,
       alt: "diamond icon symbolising VIP treatment",
       title: "Personalized Service",
       subTitle:
         "Our dedicated team of travel experts will meticulously plan every aspect of your trip, offering personalized recommendations to ensure a seamless travel experience.",
     },
     {
-      icon: IoIosAirplane,
+      icon: <FaHotel />,
       alt: "hotel icon",
       title: "Beautiful Accommodation",
       subTitle:
         "Immerse yourself in the lap of luxury with our handpicked selection of exquisite accommodation, from lavish resorts to boutique hotels.",
     },
     {
-      icon: IoIosAirplane,
+      icon: <GiIndianPalace/>,
       alt: "sunset icon",
       title: "Authentic Cultural Immersion",
       subTitle:
@@ -48,10 +45,8 @@ const Services = () => {
     data.map(service=>{
       return (
         <div className="service">
-          {/* <div className="icon"> */}
-          <div>
-          {service.icon}
-            {/* <img src={service.icon} alt={service.alt} /> */}
+          <div className="service-icon" aria-hidden focusable="false">
+          {service.icon }
           </div>
           <h3>{service.title}</h3>
           <p>{service.subTitle}</p>
@@ -68,9 +63,10 @@ export default Services;
 const Section = styled.section`
 margin: 0 auto;
 max-width: 1200px;
+width: 80%;
+text-align: center;
 h2{
   margin-top: 2rem;
-  text-align: center;
 }
 .services-container{
 padding: 3rem 0;
@@ -86,13 +82,11 @@ gap: 1rem;
   box-shadow: rgba(100, 111, 111, 0.2) 0 7px 29px 0;
   transition: 0.3s ease-in-out;
   &:hover {
-    transform: translate(0.4rem, -1rem);
+    transform: translate(0.4rem, -0.5em);
     box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
   }
-  .icon{
-    img {
-      height: 2.4rem;
-    }
+  .service-icon {
+    font-size: 2rem;
   }
 }
 }
