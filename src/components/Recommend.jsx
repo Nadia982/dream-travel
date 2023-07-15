@@ -16,8 +16,6 @@ const Recommend = () => {
       image: Destination1,
       alt: "Singapore cityscape at sunset",
       category: "City Breaks",
-      "Tropical Escapes",
-      "Rural Retreats"
       title: "Singapore",
       subTitle:
         "Discover Singapore's captivating blend of opulence, innovation, and cultural splendor, where luxury meets tradition in a vibrant urban oasis.",
