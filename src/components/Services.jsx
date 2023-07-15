@@ -71,11 +71,14 @@ h2{
   margin-top: 2rem;
 }
 .services-container{
-  color: var(--primary-color);
 padding: 1rem 0;
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 gap: 1rem;
+h3 {
+  color: var(--primary-dark);
+  min-height: 3rem;
+}
 .service{
   display: flex;
   flex-direction: column;
