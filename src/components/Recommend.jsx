@@ -14,6 +14,7 @@ const Recommend = () => {
   const data = [
     {
       image: Destination1,
+      alt: "Singapore cityscape at sunset",
       title: "Singapore",
       subTitle:
         "Discover Singapore's captivating blend of opulence, innovation, and cultural splendor, where luxury meets tradition in a vibrant urban oasis.",
@@ -21,6 +22,7 @@ const Recommend = () => {
     },
     {
       image: Destination2,
+      alt: "A barge on a river in Thailand at sunset with a temple in the background",
       title: "Thailand",
       subTitle:
         "Indulge in Thailand's opulent treasures, from ornate temples and immaculate beaches to world-class resorts and Michelin-starred cuisine.",
@@ -28,6 +30,7 @@ const Recommend = () => {
     },
     {
       image: Destination3,
+      alt: "The Eiffel Tower at night",
       title: "Paris",
       subTitle:
         "Experience the epitome of elegance and sophistication in the enchanting city of Paris, where exquisite cuisine, iconic landmarks, and unparalleled artistry await.",
@@ -35,6 +38,7 @@ const Recommend = () => {
     },
     {
       image: Destination4,
+      alt: "A mountain scene of snowy wilderness in New Zealand",
       title: "New Zealand",
       subTitle:
         "Discover a pristine idyll of breathtaking landscapes, untouched wilderness, and exceptional amenities in New Zealand.",
@@ -42,6 +46,7 @@ const Recommend = () => {
     },
     {
       image: Destination5,
+      alt: "overwater bungalows on clear blue sea",
       title: "Bora Bora",
       subTitle:
         "Experience ultimate luxury at Bora Bora, where flawless turquoise waters, overwater bungalows, and first-class service create an unforgettable tropical escape.",
@@ -49,6 +54,7 @@ const Recommend = () => {
     },
     {
       image: Destination6,
+      alt: "The London Eye ferris wheel illuminated in purple, set against a background of a night-time scene in London",
       title: "London",
       subTitle:
         "Immerse yourself in the timeless elegance and vibrant energy of London, a city where rich history and tradition meets modern luxury.",
@@ -88,14 +94,14 @@ const Recommend = () => {
           {data.map((destination) => {
             return (
               <div className="destination">
-                <img src={destination.image} alt={destination.title} />
+                <img src={destination.image} alt={destination.alt} />
                 <h3>{destination.title}</h3>
                 <p>{destination.subTitle}</p>
                 <div className="info">
                   <div className="services">
-                    <img src={info1} alt="logo" />
-                    <img src={info2} alt="logo" />
-                    <img src={info3} alt="logo" />
+                    <img src={info1} alt="plane logo" />
+                    <img src={info2} alt="hotel logo" />
+                    <img src={info3} alt="meal logo" />
                   </div>
                   <h4>{destination.duration}</h4>
                 </div>
