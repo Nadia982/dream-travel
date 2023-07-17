@@ -3,7 +3,7 @@ import ScrollToTop from './components/ScrollToTop'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
-import Recommend from './components/Recommend'
+import Places from './components/Places'
 import Testimonials from './components/Testimonials'
 import Footer from './components/Footer'
 import scrollreveal from "scrollreveal"
@@ -20,7 +20,7 @@ const App = () => {
       ` 
       #hero, 
       #service,
-      #recommend,
+      #places,
       #testimonials,
       `,
       {
@@ -35,7 +35,7 @@ const App = () => {
     <Navbar/>
     <Hero/>
     <Services/>
-    <Recommend/>
+    <Places/>
     <Testimonials/>
     <Footer/>
     

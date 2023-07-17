@@ -24,7 +24,7 @@ const Navbar = () => {
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#recommend">Places</a></li>
+          <li><a href="#places">Places</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
         </ul>
         <button>Contact</button>
@@ -33,7 +33,7 @@ const Navbar = () => {
       <ul>
           <li><a href="#hero" onClick={()=>setNavbarState(false)}>Home</a></li>
           <li><a href="#services" onClick={()=>setNavbarState(false)}>Services</a></li>
-          <li><a href="#recommend" onClick={()=>setNavbarState(false)}>Places</a></li>
+          <li><a href="#places" onClick={()=>setNavbarState(false)}>Places</a></li>
           <li><a href="#testimonials" onClick={()=>setNavbarState(false)}>Testimonials</a></li>
         </ul>
       </ResponsiveNav>

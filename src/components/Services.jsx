@@ -5,7 +5,6 @@ import {GiIsland, GiIndianPalace} from 'react-icons/gi';
 import {FaHotel} from 'react-icons/fa';
 import {PiCrownSimpleBold} from 'react-icons/pi';
 
-
 const Services = () => {
   const data = [
     {
@@ -47,7 +46,7 @@ const Services = () => {
         <div className="service">
           <h3>{service.title}</h3>
           <div className="service-icon" aria-label={service.aria} focusable="false">
-          {service.icon }
+          {service.icon}
           </div>
           
           <p>{service.subTitle}</p>
