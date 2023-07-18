@@ -33,8 +33,8 @@ const App = () => {
     <>
     <ScrollToTop/>
     <Navbar/>
-    <Hero/>
-    <Services/>
+    {/* <Hero/> */}
+    {/* <Services/> */}
     <Places/>
     <Testimonials/>
     <Footer/>

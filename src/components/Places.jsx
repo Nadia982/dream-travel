@@ -5,6 +5,29 @@ import styled from "styled-components";
 import PlacesButtons from "./PlacesButtons";
 import PlacesDestinations from "./PlacesDestinations";
 
+// const allCategories = [‘All’, …new Set(items.map(item => item.category))]
+
+// function App(){
+// 	const [menuItem, setMenuItem] = useState(items)
+// 	const [buttons, setButtons] = useState([])
+
+// 	const filter = (button) => { 
+
+// 		if(button === ‘All’){
+// setMenuItem(items); 
+// return 
+// }
+// 	const filteredData = data.filter(item => item.category === button)
+// 	setMenuItem(filteredData) 
+// }
+
+// return (
+// <>
+// <Button button={buttons} filter = {filter}/>
+// <Menu menuItem = {menuItem}/>
+// </>
+// )
+// } 
 
 
 const Places = () => {
@@ -12,11 +35,9 @@ const Places = () => {
     <Section id="places">
       <div className="title">
         <h2>Places</h2>
-      </div>
-      
+      </div>      
       <PlacesButtons/>
       <PlacesDestinations/>
-        
     </Section>
   );
 };
