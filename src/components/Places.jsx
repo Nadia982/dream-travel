@@ -1,43 +1,31 @@
 import React, { useState } from "react";
+import items from "./data";
 
 import styled from "styled-components";
 
-import PlacesButtons from "./PlacesButtons";
+import PlacesMenu from "./PlacesMenu";
 import PlacesDestinations from "./PlacesDestinations";
+import PlacesTitle from "./PlacesTitle";
 
-// const allCategories = [‘All’, …new Set(items.map(item => item.category))]
-
-// function App(){
-// 	const [menuItem, setMenuItem] = useState(items)
-// 	const [buttons, setButtons] = useState([])
-
-// 	const filter = (button) => { 
-
-// 		if(button === ‘All’){
-// setMenuItem(items); 
-// return 
-// }
-// 	const filteredData = data.filter(item => item.category === button)
-// 	setMenuItem(filteredData) 
-// }
-
-// return (
-// <>
-// <Button button={buttons} filter = {filter}/>
-// <Menu menuItem = {menuItem}/>
-// </>
-// )
-// } 
-
+const allCategories = ["All", ...new Set(items.map((item) => item.category))];
 
 const Places = () => {
+  const [menuItem, setMenuItem] = useState(items);
+  const [buttons, setButtons] = useState([]);
+  const filter = (button) => {
+    if (button === "All") {
+      setMenuItem(items);
+      return;
+    }
+    const filteredData = items.filter((item) => item.category === button);
+    setMenuItem(filteredData);
+  };
+
   return (
     <Section id="places">
-      <div className="title">
-        <h2>Places</h2>
-      </div>      
-      <PlacesButtons/>
-      <PlacesDestinations/>
+      <PlacesTitle />
+      <PlacesMenu button={buttons} filter = {filter}/>
+      <PlacesDestinations menuItem = {menuItem} />
     </Section>
   );
 };
@@ -64,13 +52,12 @@ const Section = styled.section`
         align-items: center;
         border-bottom: 0.1rem solid #000;
         &:hover {
-        background-color: var(--primary-lightest);
+          background-color: var(--primary-lightest);
+        }
       }
-      }
-      .active { 
+      .active {
         border-bottom: 0.5rem solid var(--secondary-color);
       }
-      
     }
   }
   .destinations {
@@ -89,13 +76,13 @@ const Section = styled.section`
       transition: 0.3s ease-in-out;
       &:hover {
         transform: translate(0.4rem, -1rem);
-        box-shadow: rgba(0,0,0,0.35) 0 5px 15px; 
+        box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
       }
       img {
-        width: 100%; 
+        width: 100%;
         border-radius: 0.5rem;
       }
-      .info{
+      .info {
         display: flex;
         align-items: center;
         .services {
@@ -114,7 +101,7 @@ const Section = styled.section`
       }
     }
   }
-  @media screen and (max-width: 980px){
+  @media screen and (max-width: 980px) {
     .packages {
       ul {
         text-align: center;
@@ -124,15 +111,14 @@ const Section = styled.section`
           width: 25%;
           padding: 1rem 0.5rem;
           font-size: 0.8rem;
-         
         }
         .active {
-          border-bottom-width: 0.3rem; 
+          border-bottom-width: 0.3rem;
         }
       }
     }
-  .destinations{
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr))
+    .destinations {
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    }
   }
-}
 `;
