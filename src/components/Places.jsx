@@ -3,17 +3,18 @@ import items from "./data";
 
 import styled from "styled-components";
 
-import PlacesMenu from "./PlacesMenu";
+import PlacesButtons from "./PlacesButtons";
 import PlacesDestinations from "./PlacesDestinations";
 import PlacesTitle from "./PlacesTitle";
 
-const allCategories = ["All", ...new Set(items.map((item) => item.category))];
+const allCategories = ["All Destinations", ...new Set(items.map((item) => item.category))];
 
 const Places = () => {
   const [menuItem, setMenuItem] = useState(items);
-  const [buttons, setButtons] = useState([]);
+  const [buttons, setButtons] = useState(allCategories);
+
   const filter = (button) => {
-    if (button === "All") {
+    if (button === "All Destinations") {
       setMenuItem(items);
       return;
     }
@@ -24,7 +25,7 @@ const Places = () => {
   return (
     <Section id="places">
       <PlacesTitle />
-      <PlacesMenu button={buttons} filter = {filter}/>
+      <PlacesButtons button={buttons} filter={filter}/>
       <PlacesDestinations menuItem = {menuItem} />
     </Section>
   );
@@ -33,9 +34,9 @@ const Places = () => {
 export default Places;
 
 const Section = styled.section`
-  padding: 2rem 0;
   .title {
     text-align: center;
+    padding: 2rem 0 0;
   }
   .packages {
     display: flex;
