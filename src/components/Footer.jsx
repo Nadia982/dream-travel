@@ -21,9 +21,9 @@ const Footer = () => {
         </li>
       </ul>
       <ul className="social__links">
-       <li><BsFacebook/></li>
-       <li><BsLinkedin/></li>
-       <li><AiFillInstagram/></li>
+       <li><a href="https://www.facebook.com/" rel="noopener noreferrer"><BsFacebook/></a></li>
+       <li><a href="https://www.linkedin.com/" rel="noopener noreferrer"><BsLinkedin/></a></li>
+       <li><a href="https://www.instagram.com/" rel="noopener noreferrer"><AiFillInstagram/></a></li>
       </ul>
     </FooterContainer>
   );
