@@ -1,8 +1,7 @@
 {
   "name": "dream-travel",
   "version": "0.1.0",
-  "description": "A landing page for a travel agent",
-  "homepage": "https://github.com/Nadia982/dream-travel",
+  "homepage": "https://myusername.github.io/dream-travel",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -18,9 +17,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
