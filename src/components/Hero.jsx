@@ -119,12 +119,12 @@ const Section = styled.section`
         border-radius: 5px;
         color: white;
         border: none;
-        background-color: var(--primary-bright);
+        background-color: var(--primary-color);
         font-size: 1.1rem;
         width: 100px;
         transition: 0.3s ease-in-out;
         &:hover{
-          background-color: var(--primary-dark);
+          background-color: var(--primary-accent);
         }
       }
     }

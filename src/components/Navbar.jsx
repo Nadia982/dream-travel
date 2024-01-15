@@ -103,7 +103,7 @@ button {
   border: none;
   border-radius: 1rem;
   color: whitesmoke;
-  background-color: var(--primary-light);
+  background-color: var(--primary-color);
   font-weight: bolder;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
